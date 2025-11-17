@@ -30,3 +30,7 @@ app.listen(PORT, (err) => {
   console.log(`  - GET http://localhost:${PORT}/`);
   console.log(`  - GET http://localhost:${PORT}/evening`);
 });
+
+// Export the Express app instance for testing purposes
+// This allows other modules to import and test the server without starting it
+module.exports = app;
